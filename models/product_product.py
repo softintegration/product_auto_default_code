@@ -7,6 +7,8 @@ DEFAULT_CODE_SEQUENCE_CODE = "product.product.default_code"
 class ProductProduct(models.Model):
     _inherit = 'product.product'
 
+    default_code = fields.Char('Internal Reference', index=True,readonly=True)
+
     @api.model_create_multi
     def create(self, vals):
         products = super(ProductProduct, self).create(vals)
