@@ -2,7 +2,7 @@
 
 {
     'name': 'Product auto default code assignment',
-    'version': '1.0.1.2',
+    'version': '1.0.1.3',
     'author':'Soft-integration',
     'category': 'Stock',
     'summary': 'Product auto default code assignment',
