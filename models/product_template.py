@@ -8,5 +8,5 @@ class ProductTemplate(models.Model):
 
     default_code = fields.Char(
         'Internal Reference', compute='_compute_default_code',
-        inverse='_set_default_code', store=True,readonly=True)
+        inverse='_set_default_code', store=True,readonly=False)
 
